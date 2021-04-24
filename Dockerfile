@@ -7,6 +7,7 @@ RUN cd /usr && tar cf /gems.tar \
 
 FROM docker://registry.fedoraproject.org/fedora-minimal:33
 RUN microdnf install -y \
+        ansible \
         openssh-clients \
         tar \
         vagrant \
