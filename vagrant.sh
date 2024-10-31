@@ -10,4 +10,4 @@ exec podrunner.sh --utf8 --homedir --libvirtd --ssh-agent -- \
 	--net host \
 	--privileged \
 	--entrypoint /usr/bin/vagrant \
-	localhost/vagrant-container:40 "$@"
+	localhost/vagrant-container:41 "$@"
