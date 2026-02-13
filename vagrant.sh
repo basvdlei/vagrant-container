@@ -3,6 +3,7 @@
 # --env "VAGRANT_LOG=debug" \
 exec podrunner.sh --utf8 --homedir --libvirtd --ssh-agent -- \
 	--rm -it \
+	--log-driver none \
 	--volume /var/lib:/var/lib:ro \
 	--env "CONTAINER_TYPE=vagrant" \
         --env "LIBVIRT_DEFAULT_URI=${LIBVIRT_DEFAULT_URI}" \
